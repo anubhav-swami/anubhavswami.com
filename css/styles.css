@@ -735,13 +735,11 @@ input, textarea, select { font-family: inherit; }
   .footer-legal { justify-content: center; }
   .nav-links {
     display: none; position: fixed;
-    top: var(--nav-h); left: 0; right: 0;
-    height: calc(100vh - var(--nav-h));
+    top: 0; left: 0; right: 0; bottom: 0;
     background: #191919 !important;
-    flex-direction: column; justify-content: space-evenly;
+    flex-direction: column; justify-content: center;
     align-items: stretch;
-    padding: 1rem 1.5rem;
-    border-top: 1px solid var(--border);
+    padding: calc(var(--nav-h) + 1.5rem) 1.5rem 2rem;
     z-index: 9999; overflow: hidden;
   }
   .nav-links.open { display: flex !important; }
