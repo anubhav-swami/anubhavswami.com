@@ -735,16 +735,34 @@ input, textarea, select { font-family: inherit; }
   .footer-legal { justify-content: center; }
   .nav-links {
     display: none; position: fixed;
-    top: var(--nav-h); left: 0; right: 0; bottom: 0;
-    background: var(--bg);
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: #191919;
     flex-direction: column;
-    padding: 1.5rem; gap: .25rem;
-    border-top: 1px solid var(--border);
+    justify-content: center;
+    padding: 2rem;
+    gap: .5rem;
     z-index: 9999;
   }
   .nav-links.open { display: flex; }
-  .nav-links a { padding: .875rem 1rem; font-size: 1rem; color: var(--white); }
-  .nav-cta { margin-left: 0 !important; text-align: center; }
+  .nav-links li { width: 100%; }
+  .nav-links a {
+    display: block;
+    padding: .875rem 1rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #ffffff;
+    border-radius: var(--r-md);
+  }
+  .nav-links a:hover, .nav-links a.active {
+    background: rgba(255,255,255,.07);
+    color: #ffffff;
+  }
+  .nav-cta {
+    margin-left: 0 !important;
+    background: linear-gradient(90deg,#E8692A,#E83D76) !important;
+    text-align: center !important;
+    margin-top: .5rem !important;
+  }
   .nav-toggle { display: flex; }
 
   /* ── About bio grid ── */
