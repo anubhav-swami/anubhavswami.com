@@ -7,8 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelector('.nav-links');
 
   if (toggle && navLinks) {
-    document.body.appendChild(navLinks);
-
     toggle.addEventListener('click', () => {
       toggle.classList.toggle('open');
       navLinks.classList.toggle('open');

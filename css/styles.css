@@ -187,12 +187,13 @@ input, textarea, select { font-family: inherit; }
 
 /* ── ─────────────── NAVIGATION ────────────────────────────── */
 .site-header {
-  position: sticky; top: 0; z-index: 200;
+  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
   background: var(--bg-nav);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
 }
+body { padding-top: var(--nav-h); }
 .nav {
   display: flex; align-items: center; justify-content: space-between;
   height: var(--nav-h);
