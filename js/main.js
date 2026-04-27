@@ -7,21 +7,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelector('.nav-links');
 
   if (toggle && navLinks) {
-    /* Move nav overlay to body so iOS sticky header doesn't clip it */
-    document.body.appendChild(navLinks);
-
-    const closeMenu = () => {
-      toggle.classList.remove('open');
-      navLinks.classList.remove('open');
-    };
-
     toggle.addEventListener('click', () => {
       toggle.classList.toggle('open');
       navLinks.classList.toggle('open');
     });
 
     navLinks.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', closeMenu);
+      link.addEventListener('click', () => {
+        toggle.classList.remove('open');
+        navLinks.classList.remove('open');
+      });
     });
   }
 

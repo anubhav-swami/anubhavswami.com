@@ -733,48 +733,18 @@ input, textarea, select { font-family: inherit; }
   .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
   .footer-bottom { flex-direction: column; text-align: center; }
   .footer-legal { justify-content: center; }
-  /* ── Mobile nav overlay ── */
   .nav-links {
     display: none; position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: #191919 !important;
+    top: var(--nav-h); left: 0; right: 0; bottom: 0;
+    background: var(--bg);
     flex-direction: column;
-    padding: calc(var(--nav-h) + 2rem) 2rem 2rem;
-    z-index: 9999; overflow: hidden;
-    gap: .375rem;
+    padding: 1.5rem; gap: .25rem;
+    border-top: 1px solid var(--border);
+    z-index: 9999;
   }
-  .nav-links.open { display: flex !important; }
-  .nav-links li { width: 100%; }
-  .nav-links a {
-    padding: .875rem 1.25rem !important;
-    font-size: 1.125rem !important;
-    font-weight: 500 !important;
-    color: #cccccc !important;
-    border-radius: var(--r-lg);
-    display: block; width: 100%;
-    letter-spacing: -.01em;
-    border: 1px solid transparent;
-    transition: all .15s ease !important;
-  }
-  .nav-links a.active {
-    color: #ffffff !important;
-    background: rgba(255,255,255,.06) !important;
-    border-color: rgba(255,255,255,.08) !important;
-  }
-  .nav-links a:hover {
-    color: #ffffff !important;
-    background: rgba(255,255,255,.06) !important;
-  }
-  .nav-links li:last-child { margin-top: .75rem; }
-  .nav-cta {
-    margin-left: 0 !important;
-    background: linear-gradient(90deg,#E8692A,#E83D76) !important;
-    color: #ffffff !important;
-    text-align: center !important;
-    font-weight: 700 !important;
-    border: none !important;
-    padding: 1rem 1.25rem !important;
-  }
+  .nav-links.open { display: flex; }
+  .nav-links a { padding: .875rem 1rem; font-size: 1rem; color: var(--white); }
+  .nav-cta { margin-left: 0 !important; text-align: center; }
   .nav-toggle { display: flex; }
 
   /* ── About bio grid ── */
