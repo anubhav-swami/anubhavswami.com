@@ -5,6 +5,19 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ── Mobile nav overlay ────────────────────────── */
   const toggle   = document.querySelector('.nav-toggle');
   const navLinks = document.querySelector('.nav-links');
+  const navParent = navLinks ? navLinks.parentElement : null;
+
+  function placeNav() {
+    if (!navLinks) return;
+    if (window.innerWidth <= 768) {
+      if (navLinks.parentElement !== document.body) document.body.appendChild(navLinks);
+    } else {
+      if (navParent && navLinks.parentElement !== navParent) navParent.appendChild(navLinks);
+    }
+  }
+
+  placeNav();
+  window.addEventListener('resize', placeNav);
 
   if (toggle && navLinks) {
     toggle.addEventListener('click', () => {
