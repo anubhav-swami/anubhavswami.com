@@ -751,7 +751,7 @@ body { padding-top: var(--nav-h); }
     display: flex;
     border-bottom: 1px solid rgba(255,255,255,.07);
   }
-  .nav-links li:last-child { border-bottom: none; }
+  .nav-links li:last-child { border-bottom: none; flex: none; padding: 1rem 1.5rem; }
   .nav-links a {
     display: flex !important;
     align-items: center !important;
@@ -772,6 +772,10 @@ body { padding-top: var(--nav-h); }
     background: linear-gradient(90deg,#E8692A,#E83D76) !important;
     color: #ffffff !important;
     font-weight: 700 !important;
+    font-size: 1rem !important;
+    padding: .75rem 1.5rem !important;
+    border-radius: 10px !important;
+    width: 100% !important;
   }
   .nav-toggle { display: flex; }
 
