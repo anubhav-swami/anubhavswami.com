@@ -735,27 +735,33 @@ input, textarea, select { font-family: inherit; }
   .footer-legal { justify-content: center; }
   .nav-links {
     display: none; position: fixed;
-    top: var(--nav-h); left: 0; right: 0; bottom: 0;
+    top: var(--nav-h); left: 0; right: 0;
+    height: calc(100vh - var(--nav-h));
     background: #191919 !important;
-    flex-direction: column;
-    padding: 2rem 1.5rem; gap: .5rem;
+    flex-direction: column; justify-content: center;
+    align-items: stretch;
+    padding: 1.5rem; gap: .25rem;
     border-top: 1px solid var(--border);
     z-index: 9999;
-    -webkit-overflow-scrolling: touch;
-    overflow-y: auto;
   }
   .nav-links.open { display: flex !important; }
+  .nav-links li { width: 100%; }
   .nav-links a {
-    padding: 1rem 1.25rem !important;
+    padding: .875rem 1.25rem !important;
     font-size: 1.125rem !important;
     font-weight: 600 !important;
     color: #ffffff !important;
     border-radius: var(--r-md);
-    display: block;
+    display: block; width: 100%;
   }
   .nav-links a:hover, .nav-links a.active {
     background: rgba(255,255,255,.08);
     color: #ffffff !important;
+  }
+  .nav-cta {
+    margin-left: 0 !important;
+    margin-top: .5rem !important;
+    text-align: center;
   }
   .nav-toggle { display: flex; }
   .cta-block { padding: 3rem 1.75rem; }
