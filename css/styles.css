@@ -740,38 +740,42 @@ body { padding-top: var(--nav-h); }
     top: var(--nav-h); left: 0; right: 0; bottom: 0;
     background: #191919;
     flex-direction: column;
-    padding: 0.5rem 0 1rem;
     z-index: 10000;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    border-top: 1px solid rgba(255,255,255,.1);
     list-style: none;
+    padding: 0;
+    margin: 0;
   }
   .nav-links.open { display: flex; }
-  .nav-links li { width: 100%; }
+  .nav-links li {
+    flex: 1;
+    display: flex;
+    border-bottom: 1px solid rgba(255,255,255,.07);
+  }
+  .nav-links li:last-child { border-bottom: none; flex: 1.4; }
   .nav-links a {
     display: flex !important;
-    align-items: center;
-    padding: 1rem 1.5rem !important;
-    font-size: 1.0625rem !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    font-size: 1.1875rem !important;
     font-weight: 500 !important;
-    color: #ffffff !important;
-    border-bottom: 1px solid rgba(255,255,255,.05) !important;
-    transition: background .15s !important;
+    color: #cccccc !important;
+    letter-spacing: -.01em !important;
+    transition: background .12s, color .12s !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
-  .nav-links a:active { background: rgba(255,255,255,.06) !important; }
+  .nav-links a:active,
+  .nav-links a:hover { background: rgba(255,255,255,.05) !important; color: #ffffff !important; }
   .nav-links a.active { color: #E8692A !important; font-weight: 600 !important; }
-  .nav-links li:last-child a { border-bottom: none !important; }
   .nav-cta {
-    margin: 1rem 1.5rem 0 !important;
-    padding: .875rem 1.5rem !important;
+    margin: 1.25rem !important;
+    width: calc(100% - 2.5rem) !important;
+    border-radius: 12px !important;
     background: linear-gradient(90deg,#E8692A,#E83D76) !important;
     color: #ffffff !important;
-    text-align: center !important;
-    border-radius: 8px !important;
-    border-bottom: none !important;
     font-weight: 700 !important;
-    justify-content: center !important;
+    font-size: 1rem !important;
   }
   .nav-toggle { display: flex; }
 
