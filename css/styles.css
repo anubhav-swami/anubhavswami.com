@@ -6,10 +6,10 @@
 /* ── Variables ─────────────────────────────────────────────── */
 :root {
   /* Backgrounds */
-  --bg:        #191919;
-  --bg-card:   #212121;
-  --bg-card2:  #252525;
-  --bg-nav:    rgba(22, 22, 22, 0.95);
+  --bg:        #0d0d0d;
+  --bg-card:   #141414;
+  --bg-card2:  #181818;
+  --bg-nav:    rgba(8, 8, 8, 0.95);
 
   /* Text */
   --white:      #FFFFFF;
