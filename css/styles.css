@@ -354,7 +354,7 @@ body { padding-top: var(--nav-h); }
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-.stat-label { font-size: .75rem; color: var(--text-gray); font-weight: 500; }
+.stat-label { font-size: .75rem; color: var(--text-gray); font-weight: 500; white-space: nowrap; }
 
 /* ── ─────────────── SECTION HEADER ─────────────────────────── */
 .sec-header           { margin-bottom: 3.5rem; }
