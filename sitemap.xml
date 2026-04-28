@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://anubhavswami.com/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://anubhavswami.com/about.html</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://anubhavswami.com/experience.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://anubhavswami.com/speaking.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://anubhavswami.com/blogs.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://anubhavswami.com/photography.html</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://anubhavswami.com/contact.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+</urlset>
