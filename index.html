@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://www.google-analytics.com; script-src 'self' https://www.googletagmanager.com; base-uri 'self'; form-action 'self'; connect-src 'self' https://www.google-analytics.com https://analytics.google.com;" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://www.google-analytics.com; script-src 'self' https://www.googletagmanager.com; base-uri 'self'; form-action 'self'; connect-src 'self' https://www.google-analytics.com https://analytics.google.com; object-src 'none'; upgrade-insecure-requests" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Anubhav Swami — Principal Architect at Cisco specializing in Cloud Security, AI/ML Security, and Zero Trust. CCIE #21208, Distinguished Speaker, and creator with 200K+ YouTube views." />
   <title>Anubhav Swami — Cloud Security &amp; AI</title>
@@ -24,7 +24,6 @@
   <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg?v=3" /><link rel="stylesheet" href="css/styles.css" />
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-XXXXXXXXXX");</script>
 </head>
 <body>
 
@@ -381,6 +380,10 @@
   background: rgba(232,105,42,.1);
   border-color: var(--ga);
 }
+.li-quote-card {
+  transition: border-color var(--dur) var(--ease);
+}
+.li-quote-card:hover { border-color: rgba(232,105,42,.35) !important; }
 </style>
 
 <!-- ── LINKEDIN ───────────────────────────────────────────── -->
@@ -391,15 +394,15 @@
       <h2 class="sec-title h2">Latest thoughts.</h2>
     </div>
     <div class="cols-3 fade-in">
-      <div style="background:var(--bg);border:1px solid var(--border);border-radius:var(--r-xl);padding:1.75rem;display:flex;flex-direction:column;gap:1rem;transition:border-color var(--dur) var(--ease);" onmouseover="this.style.borderColor='rgba(232,105,42,.35)'" onmouseout="this.style.borderColor='var(--border)'">
+      <div class="li-quote-card" style="background:var(--bg);border:1px solid var(--border);border-radius:var(--r-xl);padding:1.75rem;display:flex;flex-direction:column;gap:1rem;">
         <p style="color:var(--white);font-size:.9375rem;line-height:1.7;flex:1;">"AI is transforming how we work — but it's also transforming how attackers operate. Securing AI infrastructure isn't optional anymore. It's the next frontier of cybersecurity."</p>
         <a href="https://linkedin.com/in/anubhavswami" target="_blank" rel="noopener noreferrer" style="color:var(--ga);font-size:.8125rem;font-weight:700;">View on LinkedIn →</a>
       </div>
-      <div style="background:var(--bg);border:1px solid var(--border);border-radius:var(--r-xl);padding:1.75rem;display:flex;flex-direction:column;gap:1rem;transition:border-color var(--dur) var(--ease);" onmouseover="this.style.borderColor='rgba(232,105,42,.35)'" onmouseout="this.style.borderColor='var(--border)'">
+      <div class="li-quote-card" style="background:var(--bg);border:1px solid var(--border);border-radius:var(--r-xl);padding:1.75rem;display:flex;flex-direction:column;gap:1rem;">
         <p style="color:var(--white);font-size:.9375rem;line-height:1.7;flex:1;">"Zero Trust isn't a product — it's a mindset. After 23 years in security, the most dangerous words I still hear are: 'We trust our internal network.'"</p>
         <a href="https://linkedin.com/in/anubhavswami" target="_blank" rel="noopener noreferrer" style="color:var(--ga);font-size:.8125rem;font-weight:700;">View on LinkedIn →</a>
       </div>
-      <div style="background:var(--bg);border:1px solid var(--border);border-radius:var(--r-xl);padding:1.75rem;display:flex;flex-direction:column;gap:1rem;transition:border-color var(--dur) var(--ease);" onmouseover="this.style.borderColor='rgba(232,105,42,.35)'" onmouseout="this.style.borderColor='var(--border)'">
+      <div class="li-quote-card" style="background:var(--bg);border:1px solid var(--border);border-radius:var(--r-xl);padding:1.75rem;display:flex;flex-direction:column;gap:1rem;">
         <p style="color:var(--white);font-size:.9375rem;line-height:1.7;flex:1;">"Multicloud isn't just a deployment model — it's a security challenge. Most organizations are one misconfigured IAM policy away from a breach."</p>
         <a href="https://linkedin.com/in/anubhavswami" target="_blank" rel="noopener noreferrer" style="color:var(--ga);font-size:.8125rem;font-weight:700;">View on LinkedIn →</a>
       </div>
